@@ -59,12 +59,6 @@ All methods except LFU choose the cache with **Reverse Greedy**: starting from a
 | `plot.py` | the results figure |
 | `queries.txt` | the 50 queries; the experiments use the first 20 to 30 |
 
-## Notes
-
-* In the original experiment code, the offline CLCB-SC and CUCB-SC only let a cached query answer itself (exact matching). They now use the semantic loss above, like every other method, so their curves in panel (b) differ slightly from the paper's figure.
-* LFU's choice among equally frequent queries is arbitrary. In panel (a) all queries are equally likely, so its cache is drawn at random; elsewhere ties go to the query listed first in `queries.txt`. Its bars in panels (a) and (e) can therefore differ from the paper's.
-* The runtimes in panel (f) depend on the machine. This implementation is faster than the one used for the paper, but the relative speed of the algorithms is the same.
-
 ## Citation
 
 ```bibtex
